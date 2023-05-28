@@ -1,0 +1,17 @@
+﻿.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    color: #337ab7;
+}
+
+.calc-input {
+    width: 200px;
+}
+
+.calc-btn {
+    width: 80px;
+    margin-bottom: 10px;
+}
