@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700" rel="stylesheet" type="text/css" />
+<link href="~/Content/Calculator.css" rel="stylesheet" />
+
+<body>
+
+    <div class="container text-center">
+        <h1>Calculate!</h1>
+        <div class="row">
+            <form class="form-group-lg form-inline text-center" onsubmit="return false">
+                <input type="text" id="calcinput" class="calc-input form-control" readonly />
+            </form>
+        </div>
+    </div>
+    <br />
+
+    <div class="container-fluid">
+        <!-- Add the memory-related buttons -->
+        <div class="row">
+            <div class="col-xs-1 col-xs-offset-4">
+                <button id="btn-mc" class="btn btn-lg btn-primary calc-btn" type="button">MC</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-mr" class="btn btn-lg btn-primary calc-btn" type="button">MR</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-m-minus" class="btn btn-lg btn-primary calc-btn" type="button">M-</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-m-plus" class="btn btn-lg btn-primary calc-btn" type="button">M+</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-1 col-xs-offset-4">
+                <button id="btn-percentage" class="btn btn-lg btn-primary calc-btn" type="button">%</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-ce" class="btn btn-lg btn-primary calc-btn" type="button">CE</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-ac" class="btn btn-lg btn-primary calc-btn" type="button">AC</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-backspace" class="btn btn-lg btn-primary calc-btn" type="button">←</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-xs-offset-4">
+                <button id="btn-reciprocal" class="btn btn-lg btn-primary calc-btn" type="button">1/x</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-square" class="btn btn-lg btn-primary calc-btn" type="button">x^2</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-square-root" class="btn btn-lg btn-primary calc-btn" type="button">√x</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-divide" class="btn btn-lg btn-primary calc-btn" type="button">/</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-1 col-xs-offset-4">
+                <button id="btn-7" class="btn btn-lg btn-primary calc-btn" type="button">7</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-8" class="btn btn-lg btn-primary calc-btn" type="button">8</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-9" class="btn btn-lg btn-primary calc-btn" type="button">9</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-multiply" class="btn btn-lg btn-primary calc-btn" type="button">*</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-xs-offset-4">
+                <button id="btn-4" class="btn btn-lg btn-primary calc-btn" type="button">4</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-5" class="btn btn-lg btn-primary calc-btn" type="button">5</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-6" class="btn btn-lg btn-primary calc-btn" type="button">6</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-minus" class="btn btn-lg btn-primary calc-btn" type="button">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-xs-offset-4">
+                <button id="btn-1" class="btn btn-lg btn-primary calc-btn" type="button">1</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-2" class="btn btn-lg btn-primary calc-btn" type="button">2</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-3" class="btn btn-lg btn-primary calc-btn" type="button">3</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-plus" class="btn btn-lg btn-primary calc-btn" type="button">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-xs-offset-4">
+                <button id="btn-plus-minus" class="btn btn-lg btn-primary calc-btn" type="button">+/-</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-0" class="btn btn-lg btn-primary calc-btn" type="button">0</button>
+            </div>
+            <div class="col-xs-1">
+                <button id="btn-comma" class="btn btn-lg btn-primary calc-btn" type="button">,</button>
+            </div>
+            <div class="col-xs-1">
+                <button class="btn btn-lg btn-primary calc-btn" type="submit" id="submit">=</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/Calculator.js"></script>
+}
+
