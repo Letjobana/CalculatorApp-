@@ -162,4 +162,10 @@
         }
     });
 
+    // Attach click event handler to the memory clear button
+    $("#btn-mc").click(function () {
+        // Clear the memory value
+        localStorage.removeItem("calculatorMemory");
+    });
+
 });
